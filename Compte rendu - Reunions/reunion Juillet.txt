@@ -1,0 +1,9 @@
+
+Switcher vers un équilibre 0
+
+Retirer les fraises en continue
+equation disponibilité des fruit avec du SI sur les fruits
+modèle de la ressource/modeliser le nombre de fruits
+Taux de prélèvement sur les I
+model SRI
+
