@@ -1,6 +1,6 @@
 # Suzukii-project
 
-Ce Git contient les lectures et les rendus de mon stage à l'INRAE au sein de l'équipe M2P2 de l'Institut Sophia Agrobiotech (ISA) sur le sujet de: 
+Ce Repository contient les lectures et les rendus de mon stage à l'INRAE au sein de l'équipe M2P2 de l'Institut Sophia Agrobiotech (ISA) sur le sujet de: 
 Modéliser la dynamique des populations de Drosophila suzukii afin d’optimiser le déploiement de la Technique de l’Insecte Stérile. 
 Le stage était supervisé par Frédéric Grognard, Ludovic Mailleret, Louise van Oudenhove et Suzanne Touzeau.
 ## *- Compte rendu - Reunions: *
