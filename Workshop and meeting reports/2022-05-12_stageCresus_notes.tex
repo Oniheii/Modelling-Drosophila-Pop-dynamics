@@ -1,0 +1,151 @@
+\documentclass[11pt,twoside]{article}
+
+%% Format
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm,footskip=1.2cm,nohead]{geometry} 
+\setlength{\parindent}{0mm}
+\addtolength{\parskip}{.3\baselineskip}
+\usepackage{lastpage,fancyhdr}
+\pagestyle{fancyplain}
+\renewcommand\headrulewidth{0pt}
+\fancyhead{}\cfoot{\small\thepage/\pageref*{LastPage}}%%* to avoid link with hyperref
+
+
+%% Misc
+\usepackage{amsmath,amssymb}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks=true,allcolors=violet]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{enumitem}
+\setlist{nosep,itemsep=2mm,leftmargin=*}
+\setlist[itemize,1,2]{label=--}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+
+\title{\bf Réunion stage Crésus}
+\author{Notes ST}
+\date{\emph{12 mai 2022}}
+\maketitle
+
+\emph{Présent·es : Crésus, Fred, Ludo, ST (Louise en mission)}
+
+\section{Système}
+
+Corrections par rapport à proposition Crésus :
+
+\begin{itemize}
+\item Accouplements selon le nombre de mâles, stériles ($M_s$) ou non, disponibles par femelle (vu lors de la précédente réunion du \emph{3 mai}) :
+  \begin{equation*}
+    v_F F_v \min\left(1,\frac{M+M_S}{r_s F_s+F_v}\right),
+  \end{equation*}
+  avec $r_S\leqslant 1$ car les femelles stériles ($F_s$) ont moins tendance à s'accoupler. \\
+  Sex-ratio équilibré, parmi les sauvages et les stériles, donc hypothèse de mâles non limitants $\Rightarrow$ on prend 1 dans le $\min$. On pourrait sinon prendre une fonction plus lisse qui sature à 1.
+  
+\item Les entrées de femelles (vierges ou accouplées) et mâles ne se font pas dans les fonctions d'accouplement, comme proposé par Crésus, mais dans les compartiments ad hoc. Sinon ces mouches ne restent pas dans la serre et disparaissent après accouplement.
+\end{itemize}
+
+On obtient alors le système suivant :
+\begin{equation}
+  \label{eq:sys}
+  \left\{
+  \begin{aligned}
+    \frac{d L}{dt} &= \beta \left(1 - \frac{L}{K} \right) F_a - (\mu_L+v_L) L &&\text{œufs + larves}\\
+    \frac{d F_v}{dt} &= (1-m) v_L M - (\mu_F+v_F) F_v + \phi_v(c,t) &&\text{\Female\ vierges}\\
+    \frac{d F_a}{dt} &= v_F \frac{M}{M+M_S} F_v -\mu_F F_a + \phi_a(c,t) &&\text{\Female\ accouplées avec mâles non stériles} \\
+    \frac{d M}{dt} &= mv_L L - \mu_M M + \phi_M(c,t) &&\text{\Male\ non stériles} \\
+  \end{aligned}
+\right.
+\end{equation}
+où
+\begin{tabular}[t]{lll}
+  $\beta$ & taux de ponte &(/unité de temps) \\
+  $K$ & capacité de charge &(individus) \\
+          & \emph{ressource disponible pour les larves} \\
+  $\mu_X$ & taux de mortalité des larves$_{X=L}$, femelles$_{X=F}$, mâles$_{X=M}$ &(/u. temps) \\
+          & \emph{adultes : inverse de l'espérance de vie} \\
+  $v_L$ & taux d'éclosion des larves  &(/u. temps) \\
+          & \emph{inverse du temps de maturation d'œuf en adulte} \\
+  $v_F$ &  taux d'accouplement &(/u. temps)\\
+          & \emph{inverse du temps nécessaire à une femelle pour s'accoupler} \\
+  $m$ & sex-ratio, \emph{proportion de mâles} &(sans unité) \\
+  $\phi_X(c,t)$ & entrée de mouches selon stade adulte $_{X=v,a,M}$ &(indiv./u. temps) \\
+          & \emph{fonction de la température $c$ et du temps $t$}
+\end{tabular}
+
+
+\section{Équilibres}
+
+Hypothèses simplificatrices :
+\begin{itemize}
+\item pas d'entrées ($\phi_X=0$) ;
+\item les individus stériles sont à l'équilibre ($M_S=$ constante).
+\end{itemize}
+
+On a les équilibres suivants :
+\begin{enumerate}
+\item équilibre trivial qui existe toujours ;
+\item équilibres non triviaux solutions de :
+  \begin{equation*}
+    \frac{\alpha \beta}{K} L^2 + \left( \frac{\delta m v_L}{\mu_M} - \alpha (1+m) \beta \right) L + \delta M_s = 0,
+  \end{equation*}
+  avec $\alpha=v_F m V_L/\mu_M$ et $\delta=(\mu_L+v_L)(\mu_F+v_F)$. \\
+  Après calculs, on obtient :
+  \begin{equation*}
+    \mathcal{R}=\frac{v_F (1-m) \beta}{(\mu_L+v_L)(\mu_F+v_F)\mu_F}.
+  \end{equation*}
+  Si $\mathcal{R}>1$ (et $M_S>0$), 2 solutions et donc 2 équilibres positifs ; si $\mathcal{R}\leqslant 1$ pas d'autre solution positive, uniquement l'équilibre trivial.
+\end{enumerate}
+
+
+\section{Suite}
+
+\begin{itemize}
+\item Pas de plan de phase en dimension 4. Faire quelques \textbf{simulations}.
+\item Stabilité locale ; étudier les \textbf{bifurcations} en fonction de $M_S$ et $\beta$.
+\item Les femelles entrent dans la serre pour pondre : \textbf{introduire $\phi_a$ constant}.
+\item Mesure des \textbf{dégâts} 
+  \begin{enumerate}
+  \item Quantité de \textbf{piqûres} (cumul $Q_P$), qui dépend du nombre total de femelles accouplées, avec des mâles fertiles ($F_a$, équation~\eqref{eq:sys} ci-dessus) ou stériles ($F_{\varnothing}$), car même sans ponte (viable), la piqûre peut causer des dégâts, en favorisant l'apparition de maladies. On a  :
+    \begin{align*}
+      \frac{d F_{\varnothing}}{dt} &=  v_F \frac{M_S}{M+M_S} F_v  - \mu_F F_{\varnothing}, \\
+      \intertext{ou en écrivant directement la dynamique de $F=F_a+F_{\varnothing}$ :}
+      \frac{d F}{dt} &= v_F F_v - \mu_F F \textcolor{gray}{+ \phi_a(c,t)}, \\
+    \end{align*}
+    ce qui donne :
+  \begin{equation*}
+      \frac{d Q_P}{dt} = \beta F.
+    \end{equation*}
+  \item Quantité de \textbf{larves} (cumul $Q_L$), qui consomment les fruits :
+    \begin{equation*}
+      \frac{d Q_L}{dt} = \beta \left(1 - \frac{L}{K} \right) F_a.
+    \end{equation*}
+  \end{enumerate}
+  Ne pas oublier d'initialiser ces deux variables à 0 !  
+\end{itemize}
+
+\subsection{Autres pistes}
+
+Scénarios à traiter numériquement :
+
+\begin{itemize}
+\item \emph{Introduction de la température ($c$)}
+  \begin{itemize}
+  \item La serre est a priori un milieu contrôlé, pas forcément très pertinent de faire dépendre les paramètres biologiques des mouches de la température dans la serre. 
+  \item En revanche, l'entrée des mouches dans la serre peut dépendre de la température extérieure, ce qui impacte les $\Phi$.
+\end{itemize}
+
+\item \emph{Disponibilité des fruits}
+  \begin{itemize}
+  \item On peut considérer un prélèvement à taux constant des fruits, ce qui revient à augmenter $\mu_L$. 
+  \item On peut aussi considérer que la disponibilité des fruits évolue au cours du temps. Sans introduire explicitement la ressource comme une variable supplémentaire, on peut avoir $K(t)$ qui dépend du temps.
+  \end{itemize}
+\end{itemize}
+
+\begin{center}
+  \emph{That's all folks!}
+\end{center}
+
+\end{document}
+
