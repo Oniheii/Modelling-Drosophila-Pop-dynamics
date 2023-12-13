@@ -4,7 +4,7 @@ Ce référentiel (repository) contient les lectures et les rendus de mon stage e
 
 ## Compte Rendu des Réunions
 
-Le dossier "**Intermediate Master's thesis defense**" comprend les restitutions de différentes réunions de travail tenues entre avril 2022 et juillet 2022 dans le cadre du stage.
+Le dossier "**Workshop and meeting reports**" comprend les restitutions de différentes réunions de travail tenues entre avril 2022 et juillet 2022 dans le cadre du stage.
 
 ## Ressources - Latex et Zotero
 
@@ -15,15 +15,15 @@ Le dossier "Ressources - Latex et Zotero" comprend deux sous-dossiers :
 
 ## Ressources Bibliographiques
 
-Le dossier "Ressources Bibliographiques" est organisé comme suit :
+Le dossier "Ressources Bibliographiques" contient les articles utilisés pour le modèle et la rédaction de la revue de littérature dans le cadre du mémoire de master. Il est organisé comme suit :
 
 - **Archives biblio:**
-  - **1st literature review (initial leads):** Contient des articles exploratoires sur la modélisation des ravageurs et la TIS au début du stage.
-  - **2nd literature review (Publication - initial leads):** Inclut des références initiales pour la publication de la deuxième revue de littérature.
-  - **3th literature review (Publication - not used):** Comprend des documents non utilisés pour la publication de la troisième revue de littérature.
-  - **4th literature review (master's thesis):** Contient les articles utilisés pour la rédaction de la revue de littérature dans le cadre du mémoire de master.
-  - **Reports from previous intern:** Comprend les rapports des stagiaires en modélisation des années antérieures.
-  - **Shared biblio (introductory literature review):** Inclut la bibliographie partagée par l'équipe M2P2 pour la revue de littérature introductive.
+  - **Shared biblio (introductory literature review):** Inclut la bibliographie partagée par l'équipe M2P2 pour la revue de littérature introductive du sujet la modélisation des ravageurs et la TIS.
+  - **1st literature review (initial leads):** Contient des articles explorés lors du premier Run sur la modélisation des ravageurs, la TIS et Drosophila Suzukii au début du stage.
+  - **2nd literature review (Publication - initial leads):** Inclut des références publiées lu dans le deuxième Run de revue de littérature et ayant orientée les réflexions sur le modèle.
+  - **3th literature review (Publication - not used):** Comprend des documents pour le troisième Run de revue de littérature lu mais non utilisés pour le mémoire.
+  - **4th literature review (master's thesis):** Contient des mémoires de master lu en exemple pour trouver le bon canevas afin d'établir un plan et structurer le corps de la rédaction.
+  - **Reports from previous intern:** Comprend les rapports des stagiaires en modélisation de l'équipe M2P2 des années antérieures.
 
 - **Modelling biblio:** Rassemble les articles utilisés pour le modèle et les analyses théoriques.
 
@@ -31,12 +31,14 @@ Le dossier "Ressources Bibliographiques" est organisé comme suit :
 
 - **Suzukii biology and life cycle biblio:** Comprend la littérature utilisée pour rédiger le chapitre sur la biologie et le cycle de vie de Drosophila Suzukii.
 
-- **Theoretical analysis of model biblio:** Contient les articles utilisés pour l'analyse théorique du modèle.
+- **Theoretical analysis of model biblio:** Contient les références utilisées pour l'analyse théorique du modèle.
 
 ## Script Python
 
 Le dossier "Script Python" contient le code Python au format 'ipynb' (Jupyter Notebook), avec les résultats sous forme de graphiques dans le sous-dossier "output".
 
-## Workshop and Meeting Reports
+## Intermediate Master's thesis defense
+Le dossier "Intermediate Master's thesis defense" contient le mémoire intermédiaire rédigé à la mi-stage et soutenu à la Faculté des sciences de l'Aix-Marseille Université dans le cadre de la validation du stage de MASTER 1 - MATHÉMATIQUES ETAPPLICATIONS : COMPUTATIONAL AND MATHEMATICAL BIOLOGY (CMB) dirigé par Florence HUBERT et Laurence RODER.
 
 Le fichier "**topo - model for pest control using SIT.pdf**" contient la communication dans un congrès de l'année 2023 sur le modèle de dynamique de population structuré par sexe et stade pour le contrôle des ravageurs par la Technique de l'Insecte Stérile.
+https://hal.inrae.fr/hal-04144139
