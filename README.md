@@ -4,7 +4,7 @@ Ce référentiel (repository) regroupe les lectures et les rendus de mon stage e
 
 ## Compte Rendu des Réunions
 
-Le dossier "Compte rendu - Reunions" comprend les restitutions de différentes réunions de travail tenues entre avril 2022 et juillet 2022 dans le cadre du stage.
+Le dossier "**Compte rendu - Reunions**" comprend les restitutions de différentes réunions de travail tenues entre avril 2022 et juillet 2022 dans le cadre du stage.
 
 ## Étape 0 - Contexte
 
@@ -23,7 +23,7 @@ Ce dossier contient la littérature utilisée pour rédiger le chapitre sur la B
 
 Ce dossier rassemble différents articles que j'ai lus et qui m'ont inspiré (de près ou de loin) pour le modèle et les analyses théoriques.
 
-## Étape 3 - Programme
+## Étape 3 - Programme (Jupyter Notebook)
 
 Le dossier "Step 3 - programme" contient mon code Python au format 'ipynb' (Jupyter Notebook), avec les résultats sous forme de graphiques dans le sous-dossier "output".
 
