@@ -12,7 +12,7 @@ Le dossier "Step 0 - contexte" est subdivisé en quatre sous-dossiers :
 
 - **bibliographie initiale:** Contient des articles lus sur les sujets de la modélisation des ravageurs et de la TIS au début du stage.
 - **bibliographie partagée:** Inclut des références bibliographiques sur le sujet du stage, fournies par l'équipe M2P2 au début du stage.
-- **précédents stages:** Comprend des rendus des "stagiaires modélisation" de l'équipe M2P2 des années antérieures.
+- **précédents stages:** Comprend des rendus des stages de modélisation dans l'équipe M2P2 des années antérieures.
 - **tp ludo - other:** Contient des supports de cours et d'autres documents de Ludovic Mailleret.
 
 ## Étape 1 - Cycle de vie de Suzukii
