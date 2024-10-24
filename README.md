@@ -1,6 +1,10 @@
 # Modelling Drosophila suzukii Population Dynamics for Pest Control
 
-This repository contains the code and resources for a project focused on modeling the population dynamics of **Drosophila suzukii**, a pest species, with the aim of optimizing the use of the **Sterile Insect Technique (SIT)** for pest control. This technique has been widely researched to reduce pest populations in a sustainable and targeted manner.
+This repository contains the code and resources for a project focused on modeling the population dynamics of **Drosophila suzukii**, a pest species, with the aim of optimizing the use of the **Sterile Insect Technique (SIT)** for pest control. 
+This technique has been widely researched to reduce pest populations in a sustainable and targeted manner.
+My supervisors for this internship within the M2P2 team at the Institut Sophia Agrobiotech (ISA) were : 
+Frédéric Grognard, Ludovic Mailleret, Louise van Oudenhove and Suzanne Touzeau.
+
 
 ### Project Overview
 
@@ -36,13 +40,9 @@ Initial simulations suggest that the SIT can significantly reduce pest populatio
 - Conduct field validation of the model's predictions.
 - Investigate the scalability of the model for other pest species and regions.
 
-### File Structure
+### Structure
 
-- `scripts/`: Contains Python scripts and Jupyter Notebooks for running simulations and generating output.
-- `resources/`: Includes bibliographic resources, such as literature on the biology of Drosophila suzukii and mathematical modeling approaches.
+- `scripts python/`: Contains Python scripts and Jupyter Notebooks for running simulations and generating output.
+- `resources */`: Includes bibliographic resources, such as literature on the biology of Drosophila suzukii and mathematical modeling approaches.
 - `outputs/`: Stores generated graphs and simulation results.
-- `thesis_documents/`: Includes intermediate reports and final papers related to the project.
-
-### How to Use
-
-To run the model simulations, clone the repository and run the Python scripts in a Jupyter Notebook environment. All dependencies are listed in the `requirements.txt` file.
+- `thesis documents and other/`: Includes intermediate reports and final reports related to the intership.
