@@ -1,44 +1,48 @@
-# Projet Suzukii
+# Modelling Drosophila suzukii Population Dynamics for Pest Control
 
-Ce référentiel (repository) contient les lectures et les rendus de mon stage effectué à l'INRAE entre avril et août 2022 au sein de l'équipe M2P2 de l'Institut Sophia Agrobiotech (ISA). Le sujet du stage était la modélisation de la dynamique des populations de Drosophila suzukii en vue d'optimiser le déploiement de la Technique de l'Insecte Stérile (TIS). Mes superviseurs pour ce stage étaient Frédéric Grognard, Ludovic Mailleret, Louise van Oudenhove et Suzanne Touzeau.
+This repository contains the code and resources for a project focused on modeling the population dynamics of **Drosophila suzukii**, a pest species, with the aim of optimizing the use of the **Sterile Insect Technique (SIT)** for pest control. This technique has been widely researched to reduce pest populations in a sustainable and targeted manner.
 
-## Compte Rendu des Réunions
+### Project Overview
 
-Le dossier "**Workshop and meeting reports**" comprend les restitutions de différentes réunions de travail tenues entre avril 2022 et juillet 2022 dans le cadre du stage.
+The primary objective of this project is to develop a mathematical model that simulates the population dynamics of Drosophila suzukii. The model is designed to:
+- Incorporate biological and ecological characteristics of the species.
+- Include stages of the life cycle (e.g., larvae, adult, etc.) and the effects of the SIT method.
+- Provide insights into the efficiency of different SIT deployment strategies.
 
-## Ressources - Latex et Zotero
+This work contributes to the broader effort of pest control through sustainable and non-chemical methods by leveraging advanced population dynamics models.
 
-Le dossier "Ressources - Latex et Zotero" comprend deux sous-dossiers :
+### Data and Methodology
 
-- **Bib-Zotero:** Contient les références bibliographiques extraites depuis Zotero au format Latex.
-- **Logos et images - latex:** Inclut les logos et dessins utilisés dans le document Latex.
+The project relies on a combination of theoretical modeling and practical application through **Python** scripts. It includes:
+- A **sex- and stage-structured population model** to simulate the growth and control of Drosophila suzukii populations.
+- Parameterization based on **biological data** and field studies.
+- Simulation of pest population dynamics over time with different SIT intervention scenarios.
 
-## Ressources Bibliographiques
+The model evaluates the efficiency of **SIT** by simulating how sterile insect releases affect population suppression, taking into account different ecological and demographic parameters.
 
-Le dossier "Ressources Bibliographiques" contient les articles utilisés pour le modèle et la rédaction de la revue de littérature dans le cadre du mémoire de master. Il est organisé comme suit :
+### Key Components
 
-- **Archives biblio:**
-  - **Shared biblio (introductory literature review):** Inclut la bibliographie partagée par l'équipe M2P2 pour la revue de littérature introductive du sujet la modélisation des ravageurs et la TIS.
-  - **1st literature review (initial leads):** Contient des articles explorés lors du premier Run sur la modélisation des ravageurs, la TIS et Drosophila Suzukii au début du stage.
-  - **2nd literature review (Publication - initial leads):** Inclut des références publiées lu dans le deuxième Run de revue de littérature et ayant orientée les réflexions sur le modèle.
-  - **3th literature review (Publication - not used):** Comprend des documents pour le troisième Run de revue de littérature lu mais non utilisés pour le mémoire.
-  - **4th literature review (master's thesis):** Contient des mémoires de master lu en exemple pour trouver le bon canevas afin d'établir un plan et structurer le corps de la rédaction.
-  - **Reports from previous intern:** Comprend les rapports des stagiaires en modélisation de l'équipe M2P2 des années antérieures.
+- **Modeling Framework**: The population model incorporates various biological stages and the effects of introducing sterile insects.
+- **Python Scripts**: Python code (Jupyter Notebooks) used to run simulations and generate graphical outputs of population trends and SIT effectiveness.
+- **Theoretical Analysis**: The model is backed by a theoretical analysis of population control dynamics, allowing for fine-tuned strategies.
+  
+### Results
 
-- **Modelling biblio:** Rassemble les articles utilisés pour le modèle et les analyses théoriques.
+Initial simulations suggest that the SIT can significantly reduce pest populations, but its success is highly dependent on the release strategy and environmental conditions. Further research can refine the model and explore optimal deployment strategies in various agricultural contexts.
 
-- **Support de cours - Ludovic Mailleret:** Contient des supports de cours et d'autres documents fournis par Ludovic Mailleret.
+### Next Steps
 
-- **Suzukii biology and life cycle biblio:** Comprend la littérature utilisée pour rédiger le chapitre sur la biologie et le cycle de vie de Drosophila Suzukii.
+- Expand the model to include additional pest control methods and environmental variables.
+- Conduct field validation of the model's predictions.
+- Investigate the scalability of the model for other pest species and regions.
 
-- **Theoretical analysis of model biblio:** Contient les références utilisées pour l'analyse théorique du modèle.
+### File Structure
 
-## Script Python
+- `scripts/`: Contains Python scripts and Jupyter Notebooks for running simulations and generating output.
+- `resources/`: Includes bibliographic resources, such as literature on the biology of Drosophila suzukii and mathematical modeling approaches.
+- `outputs/`: Stores generated graphs and simulation results.
+- `thesis_documents/`: Includes intermediate reports and final papers related to the project.
 
-Le dossier "Script Python" contient le code Python au format 'ipynb' (Jupyter Notebook), avec les résultats sous forme de graphiques dans le sous-dossier "output".
+### How to Use
 
-## Intermediate Master's thesis defense
-Le dossier "Intermediate Master's thesis defense" contient le mémoire intermédiaire rédigé à la mi-stage et soutenu à la Faculté des sciences de l'Aix-Marseille Université dans le cadre de la validation du stage de MASTER 1 - MATHÉMATIQUES ETAPPLICATIONS : COMPUTATIONAL AND MATHEMATICAL BIOLOGY (CMB) dirigé par Florence HUBERT et Laurence RODER.
-
-Le fichier "**topo - model for pest control using SIT.pdf**" contient la communication dans un congrès de l'année 2023 sur le modèle de dynamique de population structuré par sexe et stade pour le contrôle des ravageurs par la Technique de l'Insecte Stérile.
-https://hal.inrae.fr/hal-04144139
+To run the model simulations, clone the repository and run the Python scripts in a Jupyter Notebook environment. All dependencies are listed in the `requirements.txt` file.
